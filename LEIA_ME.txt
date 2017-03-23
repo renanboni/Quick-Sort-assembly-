@@ -1,0 +1,35 @@
+#----------------------------------------------------------------------------------------------------------------#
+#------------------------------------------------#######--#######------------------------------------------------#
+#------------------------------------------------#--------#-----#------------------------------------------------#
+#------------------------------------------------#--------#-----#------------------------------------------------#
+#------------------------------------------------#######--#######------------------------------------------------#
+#------------------------------------------------#--------#------------------------------------------------------#
+#------------------------------------------------#--------#------------------------------------------------------#
+#------------------------------------------------#######--#------------------------------------------------------#
+#----------------------------------------------------------------------------------------------------------------#
+
+** Programa criado e testado no sistema operacional Windows 10, devido a codificação de caracteres adotada por 
+cada sistema operacional ser diferente, testes em outros SO podem apresentar resultados inconsistentes. **
+
+AVISO: Se caso ocorrer o seguinte erro, WARNING: Could not open/create prefs root node Software\JavaSoft\Prefs 
+at root 0x80000002. Windows RegCreateKeyEx(...), seguir os passos abaixo:
+
+(Válido para Windows 10, outras versões será semelhante)
+1. Vá para o menu inicial e digite "regedit" no campo de pesquisa
+2. Procure o caminho "HKEY_LOCAL_MACHINE\Software\JavaSoft"
+3. Clique com o botão direito na pasta JavaSoft, Novo -> Chave
+4. Renomeie a chave criada para "Prefs"
+
+Para executar o programa (ep.asm) será necessário 3 argumentos, em ordem, o primeiro arquivo a ser lido,
+o segundo, e o arquivo destino, onde será armazenado o vetor resultante.
+
+Todos os arquivos (.asm, arquivos de entrada e o Mars) devem estar no mesmo diretório.
+
+Para executar na linha de comando:
+
+java -jar mars.jar ep.asm pa entrada1.txt entrada2.txt saida.txt
+
+Qualquer nome de arquivo para entrada/saida é válido.
+
+OBS1: NENHUMA MENSAGEM É IMPRESSA NO CONSOLE.
+OBS2: DEPENDENDO DO TAMANHO DAS LISTAS, PODE OCORRER UMA PEQUENA DEMORA.
